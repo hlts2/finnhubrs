@@ -1,0 +1,12 @@
+# AggregateIndicators
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**technical_analysis** | Option<[**models::TechnicalAnalysis**](TechnicalAnalysis.md)> |  | [optional]
+**trend** | Option<[**models::Trend**](Trend.md)> |  | [optional]
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+
+
