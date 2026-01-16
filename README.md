@@ -12,7 +12,7 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-finnhubrs = { git = "https://github.com/hlts2/finnhubrs" }
+finnhubrs = { version = "0.0.1" }
 ```
 
 ## Usage
@@ -50,7 +50,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ```toml
 [dependencies]
-finnhubrs = { git = "https://github.com/hlts2/finnhubrs", default-features = false, features = ["rustls-tls"] }
+finnhubrs = { version = "0.0.1", default-features = false, features = ["rustls-tls"] }
 ```
 
 ## API Documentation
