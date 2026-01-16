@@ -1,4 +1,4 @@
-# finnhub-rs
+# finnhubrs
 
 Rust client library for [Finnhub API](https://finnhub.io/docs/api).
 
@@ -12,20 +12,20 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-finnhub-rs = { git = "https://github.com/hlts2/finnhub-rs" }
+finnhubrs = { git = "https://github.com/hlts2/finnhubrs" }
 ```
 
 ## Usage
 
 ```rust
-use finnhub_rs::apis::configuration::Configuration;
-use finnhub_rs::apis::default_api;
+use finnhubrs::apis::configuration::Configuration;
+use finnhubrs::apis::default_api;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     // Configure API key
     let mut config = Configuration::new();
-    config.api_key = Some(finnhub_rs::apis::configuration::ApiKey {
+    config.api_key = Some(finnhubrs::apis::configuration::ApiKey {
         key: "YOUR_API_KEY".to_string(),
         prefix: None,
     });
@@ -50,7 +50,7 @@ async fn main() -> Result<(), Box<dyn std::error::Error>> {
 
 ```toml
 [dependencies]
-finnhub-rs = { git = "https://github.com/hlts2/finnhub-rs", default-features = false, features = ["rustls-tls"] }
+finnhubrs = { git = "https://github.com/hlts2/finnhubrs", default-features = false, features = ["rustls-tls"] }
 ```
 
 ## API Documentation

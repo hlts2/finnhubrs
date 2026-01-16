@@ -31,7 +31,7 @@ docker run --rm --user $(id -u):$(id -g) \
   -i /api/openapi.yaml \
   -g rust \
   -o /local/ \
-  --additional-properties=packageName=finnhub-rs,packageVersion=0.0.1 \
+  --additional-properties=packageName=finnhubrs,packageVersion=0.0.1 \
   --skip-validate-spec
 ```
 

@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-finnhub-rs is a Rust client library for the Finnhub API.
+finnhubrs is a Rust client library for the Finnhub API.
 Based on auto-generated code from OpenAPI specification, providing an idiomatic Rust API.
 
 OpenAPI spec sourced from: https://github.com/Finnhub-Stock-API/finnhub-go/blob/master/api/openapi.yaml
@@ -52,7 +52,7 @@ cargo build --release
 ## Project Structure
 
 ```
-finnhub-rs/
+finnhubrs/
 ├── api/
 │   └── openapi.yaml     # OpenAPI spec (source of truth)
 ├── src/

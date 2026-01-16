@@ -1,12 +1,12 @@
-use finnhub_rs::apis::configuration::Configuration;
-use finnhub_rs::apis::default_api;
+use finnhubrs::apis::configuration::Configuration;
+use finnhubrs::apis::default_api;
 use std::env;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let api_key = env::var("FINNHUB_API_KEY")?;
     let mut config = Configuration::new();
-    config.api_key = Some(finnhub_rs::apis::configuration::ApiKey {
+    config.api_key = Some(finnhubrs::apis::configuration::ApiKey {
         key: api_key,
         prefix: None,
     });
